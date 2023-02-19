@@ -2,6 +2,7 @@ This is test task for SPDload company. Simple Nest app for user profile (auth/up
 
 in order to use env variables create .development.env for dev and .production.env for prod. Example could be seen in .env.example
 
+Swagger @ http://localhost:8080/api/docs/#/ (use port set in env file)
 
 ## Description
 
