@@ -1,4 +1,7 @@
-This is test task for spdlaad company. Simple Nest app for user profile (auth/update info/upload photo). Technology stack (Typescript/Nest/TypeORM/MySQL)
+This is test task for SPDload company. Simple Nest app for user profile (auth/update info/upload photo). Technology stack (Typescript/Nest/TypeORM/MySQL)
+
+in order to use env variables create .development.env for dev and .production.env for prod. Example could be seen in .env.example
+
 
 ## Description
 
