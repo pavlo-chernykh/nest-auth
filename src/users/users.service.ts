@@ -76,8 +76,6 @@ export class UsersService {
       }
       await this.mailService.sendEmailConfirm(user);
     } catch (error) {
-      console.log(error);
-
       if (error instanceof HttpException) {
         throw error;
       }
@@ -101,8 +99,6 @@ export class UsersService {
 
       return await query.getOne();
     } catch (error) {
-      console.log(error);
-
       if (error instanceof HttpException) {
         throw error;
       }
@@ -119,8 +115,6 @@ export class UsersService {
         .where('id = :id', { id })
         .execute();
     } catch (error) {
-      console.log(error);
-
       throw new InternalServerErrorException();
     }
   }
@@ -152,8 +146,6 @@ export class UsersService {
 
       return { profilePhoto };
     } catch (error) {
-      console.log(error);
-
       throw new InternalServerErrorException();
     }
   }

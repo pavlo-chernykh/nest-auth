@@ -36,8 +36,6 @@ export class AuthService {
         access_token: this.jwtService.sign(payload),
       };
     } catch (error) {
-      console.log(error);
-
       if (error instanceof HttpException) {
         throw error;
       }
@@ -70,8 +68,6 @@ export class AuthService {
         access_token: this.jwtService.sign(payloadEmail),
       };
     } catch (error) {
-      console.log(error);
-
       if (error instanceof HttpException) {
         throw error;
       }
